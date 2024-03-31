@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>원하는 문장열 찾기</title>
+</head>
+<body>
+
+    <script>
+        function solution(myString, pat) {
+            var answer = 0;
+            var str1 = myString.toLowerCase();
+            var str2 = pat.toLowerCase();
+
+            var result = str1.indexOf(str2);
+
+            if (result != -1) {
+                answer = 1;
+            } else {
+                answer = 0;
+            }
+
+            return answer;
+        }       
+    </script>
+    
+</body>
+</html>
