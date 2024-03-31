@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>최솟값 만들기</title>
+</head>
+<body>
+
+    <script>
+        function solution(A,B) {
+            var answer = 0;
+
+            A = A.sort((A,B) => A-B);
+            B = B.sort((A,B) => B-A);
+    
+            for (var i=0; i<A.length; i++) {
+                answer += A[i] * B[i];
+            }
+
+            return answer;
+        }
+
+        var arr1 = [1,4,2];
+        var arr2 = [5,4,4];
+        var arr3 = [1,2];
+        var arr4 = [3,4];
+
+        console.log(solution(arr1, arr2));
+        console.log(solution(arr3, arr4));
+    </script>
+    
+</body>
+</html>
