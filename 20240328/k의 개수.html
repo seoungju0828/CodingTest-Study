@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>k의 개수</title>
+</head>
+<body>
+    
+    <script>
+        function solution(i, j, k) {
+            var arr1 = [];
+            var arr2 = [];
+            var answer = 0;
+
+            for (var a=i; a<=j; a++) {
+                arr1.push(String(a).split(''));
+                arr2 = arr1[arr1.length-1];
+
+                for (var b=0; b<arr2.length; b++) {
+                    if (arr2[b] === String(k)) {
+                        answer++;
+                    }
+                }
+            }
+
+            return answer;
+        }
+    </script>
+
+</body>
+</html>
