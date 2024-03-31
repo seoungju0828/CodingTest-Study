@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자열 다루기 기본</title>
+</head>
+<body>
+    
+    <script>
+        function solution(s) {
+            var answer = true;
+            var leng = s.length;
+            var code = /^[0-9]*$/;
+
+            if (leng == 4 || leng == 6) {
+                if (code.test(s)) {
+
+                } else {
+                    answer = false;
+                }
+            } else {
+                answer = false;
+            }
+
+            return answer;
+        }
+    </script>
+
+</body>
+</html>

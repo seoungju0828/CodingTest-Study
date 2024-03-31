@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>l로 만들기</title>
+</head>
+<body>
+    
+    <script>
+        // function solution(myString) {
+        // 이렇게 풀 수도 있음 바보 프로그래머스
+        //     var answer = '';
+        //     var str = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'j', 'k'];
+                
+        //     var myStr = myString.split('');
+                
+        //     for (var i=0; i<myStr.length; i++) {
+        //         for (var j=0; j<str.length; j++) {
+        //             if (myStr[i] == str[j]) {
+        //                 myStr.splice(i, 1, 'l');
+        //             }
+        //         }
+        //     }
+            
+        //     answer = myStr.join('');
+            
+        //     return answer;
+        // }
+        
+        function solution(myString) {
+            return [...myString].map((v) => v < 'l' ? 'l' : v).join('');
+        }
+    </script>
+
+</body>
+</html>
