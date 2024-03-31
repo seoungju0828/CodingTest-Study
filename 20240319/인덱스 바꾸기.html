@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인덱스 바꾸기</title>
+</head>
+<body>
+
+    <script>
+        function solution(my_string, num1, num2) {
+            var answer = '';
+            var result = [];
+            var str = my_string.split('');
+
+            var first = str[num1];
+
+            str[num1] = str[num2];
+            str[num2] = first;
+
+            answer = str.join('');
+
+            return answer;
+        }       
+    </script>
+    
+</body>
+</html>

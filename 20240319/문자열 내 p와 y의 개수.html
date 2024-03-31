@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자열 내 p와 y의 개수</title>
+</head>
+<body>
+
+    <script>
+        function solution(s){
+            var answer = true;
+            var str = s.toLowerCase();
+            str = str.split('');
+                
+            var pCount = 0;
+            var yCount = 0;
+                
+            for (var i=0; i<str.length; i++) {
+                if (str[i] === 'p') {
+                    pCount++;
+                }
+                
+                if (str[i] === 'y') {
+                    yCount++;
+                }
+            }
+            
+            if (pCount == yCount) {
+                answer = true;
+            } else {
+                answer = false;
+            }
+        
+            return answer;
+        }
+    </script>
+    
+</body>
+</html>
